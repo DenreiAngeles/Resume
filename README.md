@@ -51,7 +51,7 @@ setup.sql # SQL script to create needed tables
    > Note: setup.sql already contains a CREATE DATABASE command, so you don’t need to create the database manually.
     After running it, connect to the new database using:
     ```bash
-    psql -U your_username -d resume_db
+    psql -U your_username -d resumelogin_db
     ```
 
 3. Update config.php with your PostgreSQL connection details:
