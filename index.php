@@ -71,7 +71,6 @@ include 'data.php';
                     <div class="skills-carousel">
                         <div class="skills-track">
                             <?php 
-                            // Render skills twice for seamless infinite scroll
                             for ($i = 0; $i < 2; $i++): 
                                 foreach ($skills as $skill): 
                             ?>

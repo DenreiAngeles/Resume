@@ -37,7 +37,6 @@ $experience = [
 // Education Array
 $education = [
     [
-        "icon" => "assets/icons/graduation-cap.png",
         "degree" => "Bachelor of Science in Computer Science",
         "school" => "Batangas State University - Alangilan",
         "year" => "2023 - expected 2027"
@@ -49,23 +48,17 @@ $projects = [
     [
         "title" => "AGAPAY: Arduino-based Water Agitator",
         "description" => "An Arduino-powered water agitator system built as a university project.",
-        "image" => "assets/projects/agapay.png",
-        "github" => "#",
-        "demo" => "#"
     ],
     [
         "title" => "HearDrop: Donation Matching System",
         "description" => "A console-based donation matching app developed in Java and MySQL.",
-        "image" => "assets/projects/heardrop.png",
-        "github" => "#",
-        "demo" => "#"
     ]
 ];
 
 // Social Links
 $socials = [
     ["name" => "GitHub", "url" => "https://github.com/DenreiAngeles"],
-    ["name" => "LinkedIn", "url" => "https://linkedin.com/in/denrei"], //not really working link
+    ["name" => "LinkedIn", "url" => "https://linkedin.com/in/denrei"], //not really a working link just a placeholder
     ["name" => "Email", "url" => "mailto:denrei.dev@gmail.com"]
 ];
 ?>

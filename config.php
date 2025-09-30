@@ -1,15 +1,13 @@
 <?php
-// Database configuration
+// Database configuration (You can change these settings as needed)
 define('DB_HOST', 'localhost');
 define('DB_PORT', '5432');
 define('DB_NAME', 'resumelogin_db');
-define('DB_USER', 'postgres');
-define('DB_PASS', 'dormantpig'); // Replace with your actual password
+define('DB_USER', 'postgres'); // Replace with your actual DB username
+define('DB_PASS', 'your-password-here'); // Replace with your actual password
 
-// Start session
 session_start();
 
-// Database connection function
 function getDBConnection() {
     try {
         $dsn = "pgsql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
@@ -21,12 +19,10 @@ function getDBConnection() {
     }
 }
 
-// Check if user is logged in
 function isLoggedIn() {
     return isset($_SESSION['user_id']) && isset($_SESSION['username']);
 }
 
-// Redirect to login if not authenticated
 function requireLogin() {
     if (!isLoggedIn()) {
         header('Location: login.php');
